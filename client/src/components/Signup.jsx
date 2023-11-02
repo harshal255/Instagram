@@ -1,7 +1,20 @@
 import { Link } from 'react-router-dom';
 import instaLogo from '../assets/images/insta_text_logo.png';
+import { useEffect } from 'react';
 
 const Login = () => {
+
+    const fetchData = async () => {
+        const response = await fetch('http://localhost:5000');
+        const data = await response.json();
+        console.log(data);
+    }
+
+    useEffect(() => {
+        fetchData();
+
+    }, [])
+    
     return (
         <div className='flex flex-col gap-3'>
             <div className="border-2 border-gray-300 p-10 rounded-2">
