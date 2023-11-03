@@ -11,7 +11,7 @@ const Login = () => {
                     <img src={instaLogo} alt="InstaLogo" className='h-28 w-48' />
                 </div>
                 <form className="flex gap-3 flex-col">
-                    <input type="text" className="border-2 border-gray-500 px-10 py-2 rounded-lg outline-none hover:border-gray-900" placeholder="Username or MobileNo or Email" />
+                    <input type="text" className="border-2 border-gray-500 px-10 py-2 rounded-lg outline-none hover:border-gray-900" placeholder="Username or Email" />
                     <input type="text" className="border-2 border-gray-500 px-10 py-2 rounded-lg outline-none hover:border-gray-900" placeholder="Password" />
                     <button className="rounded-lg bg-blue-500 text-white px-10 py-2 hover:bg-blue-600">Login</button>
                     <span className='text-sm text-blue-500 hover:text-blue-600 text-center my-2 cursor-pointer'>Forgot Password ?</span>
