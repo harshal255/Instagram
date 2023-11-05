@@ -42,7 +42,7 @@ const Login = () => {
 
     const submitForm = (e) => {
         e.preventDefault();
-        if (!emailRegex.test(userData.email)) { 
+        if (!emailRegex.test(userData.email)) {
             return showToastError('Please enter valid email address');
         } else if (!strongPasswordRegex.test(userData.password)) {
             return showToastError('Password must contain at least 8 digit including at least 1 special character, 1 number , 1 Uppercase character and 1 lower case character')
@@ -61,12 +61,12 @@ const Login = () => {
                 email: "",
                 password: "",
             });
-            console.log(JSON.stringify(newData));
+            // console.log(JSON.stringify(newData));
 
 
 
             // Sending data to the server
-            fetch('http://localhost:5000/signup', {
+            fetch(`${import.meta.env.VITE_APP_SERVER_URL}/signup`, {
                 method: "post",
                 headers: {
                     "Content-Type": "application/json"
@@ -85,7 +85,6 @@ const Login = () => {
                     theme: "colored",
                 })
                 navigate('/');
-
             });
 
         } else {

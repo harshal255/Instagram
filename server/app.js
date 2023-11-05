@@ -7,14 +7,14 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 require('./models/model')
 // if you don't want to show cros error then use cors-express
-// app.use(cors())
-const corsConfig = {
-    origin: '',
-    credentials: true,
-    methods: ['GET', 'POST', 'PUT', 'DELETE']
-}
-app.use(cors(corsConfig))
-app.options("", cors(corsConfig))
+app.use(cors())
+// const corsConfig = {
+//     origin: '',
+//     credentials: true,
+//     methods: ['GET', 'POST', 'PUT', 'DELETE']
+// }
+// app.use(cors(corsConfig))
+// app.options("", cors(corsConfig))
 
 //middleware:Middleware functions are functions that have access to the request object (req), the response object (res), and the next middleware function in the application’s request-response cycle. The next middleware function is commonly denoted by a variable named next.
 app.use(express.json());
