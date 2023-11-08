@@ -9,7 +9,6 @@ require('./models/model')
 // if you don't want to show cros error then use cors-express
 app.use(cors())
 // const corsConfig = {
-//     origin: '',
 //     credentials: true,
 //     methods: ['GET', 'POST', 'PUT', 'DELETE']
 // }

@@ -2,21 +2,14 @@
     "version": 2,
     "builds": [
         {
-            "src": "app.js",
+            "src": "./index.js",
             "use": "@vercel/node"
         }
     ],
-    "routes": [
+    "rewrites": [
         {
-            "src": "/(.*)",
-            "dest": "app.js",
-            "methods": [
-                "GET",
-                "POST",
-                "PATCH",
-                "DELETE",
-                "OPTIONS"
-            ]
+            "source": "/(.*)",
+            "destination": "/"
         }
     ]
 }
