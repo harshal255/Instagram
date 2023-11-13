@@ -3,6 +3,7 @@ import { BsThreeDotsVertical } from 'react-icons/bs';
 import { AiOutlineHeart, AiOutlineSave } from 'react-icons/ai';
 import { FiMessageCircle } from 'react-icons/fi';
 import { FiSend } from 'react-icons/fi'
+import { BsEmojiSmile } from 'react-icons/bs'
 
 const Post = () => {
     return (
@@ -52,7 +53,10 @@ const Post = () => {
                                 <span className="text-gray-600 cursor-pointer">View all {ele.comments} comments</span>
                                 <div className="flex justify-between">
                                     <input type="text" className="outline-none border-none my-2" placeholder="Add a comment" />
-                                    <span className="text-blue-500 cursor-pointer hover:text-blue-600 duration-300">Post</span>
+                                    <div className="flex items-center gap-2">
+                                        <BsEmojiSmile className="text-gray-600 cursor-pointer"></BsEmojiSmile>
+                                        <span className="text-blue-500 cursor-pointer hover:text-blue-600 duration-300">Post</span>
+                                    </div>
                                 </div>
 
                             </div>
