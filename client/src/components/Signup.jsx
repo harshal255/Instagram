@@ -113,7 +113,7 @@ const Login = () => {
                 </form>
             </div>
             <div className="border-2 border-gray-300 p-5 rounded-2 text-center">
-                Have an account?<Link to="/" className='text-blue-500 mx-1 hover:cursor-pointer hover:text-blue-600'>Log in</Link>
+                Have an account?<Link to="/login" className='text-blue-500 mx-1 hover:cursor-pointer hover:text-blue-600'>Log in</Link>
             </div>
             <ToastContainer />
         </div>
