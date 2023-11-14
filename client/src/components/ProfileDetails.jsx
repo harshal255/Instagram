@@ -6,14 +6,14 @@ const ProfileDetails = () => {
     return (
         <div className='mt-20'>
             <div className="flex justify-center items-center gap-20">
-                <div className="profilelogo">
+                <div className="profilelogo cursor-pointer">
                     <img src={profile.profile} alt="profile" className='h-[150px] w-[150px] rounded-full' />
                 </div>
-                <div className="details flex flex-col gap-2">
+                <div className="details flex flex-col gap-4">
                     <span className="flex gap-5 justify-center items-center">
                         <span className='text-2xl font-light'>{profile.username}</span>
-                        <button className='text-md font-bold bg-gray-200 rounded-lg p-2 cursor-pointer hover:bg-gray-400 duration-200'>Edit Profile</button>
-                        <button className='text-md font-bold bg-gray-200 rounded-lg p-2 cursor-pointer hover:bg-gray-400 duration-200'>View Archive</button>
+                        <button className='text-md font-bold bg-gray-200 rounded-lg px-3 py-1 cursor-pointer hover:bg-gray-400 duration-200'>Edit Profile</button>
+                        <button className='text-md font-bold bg-gray-200 rounded-lg px-3 py-1 cursor-pointer hover:bg-gray-400 duration-200'>View Archive</button>
                         <span className='cursor-pointer'><IoSettingsSharp></IoSettingsSharp></span>
                     </span>
                     <span className="flex items-center gap-5 justify-start">
