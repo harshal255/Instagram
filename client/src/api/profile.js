@@ -19,21 +19,82 @@ const Profile = {
     username: "undefined_harshal1230",
     profile: harshal,
     posts: [
-        quotes1,
-        quotes2,
-        quotes3,
-        quotes4,
-        quotes5,
-        quotes6,
-        quotes7,
-        quotes8,
-        quotes9,
-        quotes10,
-        quotes11,
-        quotes12,
-        quotes13,
-        quotes14,
-        quotes15,
+        {
+            post: quotes1,
+            like: 52,
+            comments: 3,
+        },
+        {
+            post: quotes2,
+            like: 101,
+            comments: 8,
+        },
+        {
+            post: quotes3,
+            like: 52,
+            comments: 3,
+        },
+        {
+            post: quotes4,
+            like: 52,
+            comments: 3,
+        },
+        {
+            post: quotes5,
+            like: 52,
+            comments: 3,
+        },
+        {
+            post: quotes6,
+            like: 52,
+            comments: 3,
+        },
+        {
+            post: quotes7,
+            like: 52,
+            comments: 3,
+        },
+        {
+            post: quotes8,
+            like: 52,
+            comments: 3,
+        },
+        {
+            post: quotes9,
+            like: 52,
+            comments: 3,
+        },
+        {
+            post: quotes10,
+            like: 52,
+            comments: 3,
+        },
+        {
+            post: quotes11,
+            like: 52,
+            comments: 3,
+        },
+        {
+            post: quotes12,
+            like: 52,
+            comments: 3,
+        },
+        {
+            post: quotes13,
+            like: 52,
+            comments: 3,
+        },
+        {
+            post: quotes14,
+            like: 52,
+            comments: 3,
+        },
+        {
+            post: quotes15,
+            like: 52,
+            comments: 3,
+        },
+
     ],
     highlights: [
         {
